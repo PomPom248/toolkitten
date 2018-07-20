@@ -1,0 +1,54 @@
+#Hours in a year
+print(24*365)
+
+#Minutes in a decade
+print(60*24*365*10)
+
+#Your age in seconds
+print(60*60*24*365*22)
+
+#Andreea's age
+print(486180000/(60*60*24*365))
+
+#Full name greeting
+first_name=input("What's your first name?")
+middle_name=input("What's your middle name?")
+last_name=input("What's your last name?")
+print("Greetings "+first_name+" "+middle_name+" "+last_name+".")
+
+#Bigger better fav number
+fav_number=input("What's your favourite number?")
+new_number=int(fav_number)+1
+print("Do you like "+str(new_number)+" better?")
+
+#Angry boss
+employee="I want more days off"
+print(("Whaddya mean "+'"'+employee+'"'+"?!? You'are fired!!").upper())
+
+#Table of content
+chap_1="Chapter 1: Getting Started"
+page_1="page 1"
+chap_2="Chapter 2: Numbers"
+page_2="page 9"
+chap_3="Chapter 3:Letters"
+page_3="page 13"
+
+print(chap_1+page_1.rjust(50," "))
+print(chap_2+page_2.rjust(58," "))
+print(chap_3+page_3.rjust(60," "))
+
+#99 bottles of beer on the wall
+for number in range (99,0,-1):
+	print(str(number)+" bottles of beer on the wall, "+str(number)+" bottles of beer. Take one down and pass it around, "+str(number-1)+" bottles of beer on the wall.")
+	
+	print("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.")
+
+#Deaf grandma
+grandma=input("Hi sweet girl ".upper())
+girlie=grandma
+while girlie!=girlie.upper():
+	girlie=(input("Huh?! Speak up girl!".upper()))
+if girlie==girlie.upper():
+	print(("No, not since "+str(random.randint(1930,1951))+"!").upper())
+if girlie=="BYE":
+	print("Bye, dear, come visit me soon".upper())
